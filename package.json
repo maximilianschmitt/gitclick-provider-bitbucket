@@ -1,0 +1,38 @@
+{
+  "name": "gitclick-provider-bitbucket",
+  "version": "0.0.1",
+  "main": "lib/gitclick-provider-bitbucket.js",
+  "description": "Bitbucket plugin for gitclick.",
+  "keywords": [
+    "gitclick",
+    "gitclick-provider",
+    "gitclick-plugin",
+    "git",
+    "bitbucket"
+  ],
+  "homepage": "https://github.com/maximilianschmitt/gitclick-provider-bitbucket",
+  "bugs": "https://github.com/maximilianschmitt/gitclick-provider-bitbucket/issues",
+  "license": "MIT",
+  "author": {
+    "name": "Maximilian Schmitt",
+    "email": "maximilian.schmitt@googlemail.com",
+    "url": "http://maximilianschmitt.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maximilianschmitt/gitclick-provider-bitbucket.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "gitclick-util": "0.0.1",
+    "underscore": "^1.6.0",
+    "bluebird": "^1.2.4",
+    "superagent": "^0.18.0"
+  },
+  "devDependencies": {
+    "gitclick-test-util": "0.0.1",
+    "rewire": "^2.0.0"
+  }
+}
