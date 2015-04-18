@@ -1,6 +1,6 @@
 {
   "name": "gitclick-provider-bitbucket",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "lib/gitclick-provider-bitbucket.js",
   "description": "Bitbucket plugin for gitclick.",
   "keywords": [
@@ -26,10 +26,11 @@
     "test": "mocha"
   },
   "dependencies": {
-    "gitclick-util": "0.0.1",
-    "underscore": "^1.6.0",
     "bluebird": "^1.2.4",
-    "superagent": "^0.18.0"
+    "gitclick-util": "0.0.1",
+    "inquirer": "^0.8.2",
+    "superagent": "^0.18.0",
+    "underscore": "^1.6.0"
   },
   "devDependencies": {
     "gitclick-test-util": "0.0.1",
