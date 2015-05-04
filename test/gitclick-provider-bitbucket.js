@@ -1,10 +1,10 @@
 /* global describe, it, before, beforeEach, after */
 'use strict';
 
-var rewire         = require('rewire');
-var testUtil       = require('gitclick-test-util');
+var ApiMock = require('./api-mock');
+var proxyquire = require('proxyquire');
+var testUtil = require('gitclick-test-util');
 
-var BitbucketProvider = rewire('../lib/gitclick-provider-bitbucket');
-BitbucketProvider.__set__('Api', require('./api-mock'));
+var bitbucketProvider = proxyquire('../lib/gitclick-provider-bitbucket', { './api': ApiMock });
 
-testUtil.testProvider(BitbucketProvider);
+testUtil.testProvider('bitbucketProvider', bitbucketProvider);

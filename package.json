@@ -27,14 +27,12 @@
   },
   "dependencies": {
     "bluebird": "^1.2.4",
-    "gitclick-util": "0.0.1",
     "inquirer": "^0.8.2",
-    "superagent": "^0.18.0",
-    "underscore": "^1.6.0"
+    "superagent": "^0.18.0"
   },
   "devDependencies": {
-    "gitclick-test-util": "0.0.1",
+    "gitclick-test-util": "^0.1.1",
     "mocha": "^2.2.4",
-    "rewire": "^2.0.0"
+    "proxyquire": "^1.4.0"
   }
 }
