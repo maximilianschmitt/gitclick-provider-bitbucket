@@ -7,4 +7,8 @@ var testUtil = require('gitclick-test-util');
 
 var bitbucketProvider = proxyquire('../lib/gitclick-provider-bitbucket', { './api': ApiMock });
 
-testUtil.testProvider('bitbucketProvider', bitbucketProvider);
+describe('bitbucketProvider', function() {
+	describe('createRepository', function() {
+		testUtil.testProvider(bitbucketProvider);
+	});
+});
